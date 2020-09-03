@@ -1,9 +1,18 @@
-h1 {
-  background-color: tomato;
+body {
+  width: 100%;
+  height: 100%;
 }
 
-.container {
-  background-color: turquoise;
-  width: 100px;
-  height: 100px;
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.image-container {
+  display: none;
+}
+
+#px-render {
+  width: 100%;
+  height: 100%;
 }

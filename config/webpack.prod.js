@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
@@ -99,6 +100,11 @@ module.exports = {
     }),
     new PurgecssPlugin({
       paths: glob.sync(path.resolve(__dirname, '../src/**/*'), { nodir: true })
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: 'src/assets/img', to: 'assets/img' },
+      ],
     }),
         // ComppresionPlugin will Prepare compressed versions of assets to serve them with Content-Encoding.
     // In this case we use gzip

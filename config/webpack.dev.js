@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -8,7 +9,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, '../build'),
-    filename: '[name].bundle.js'
+    filename: '[name].bundle.js',
   },
   mode: 'development',
   devServer: {
@@ -71,5 +72,10 @@ module.exports = {
       filename: 'index.html'
     }),
     new CleanWebpackPlugin(),
+    new CopyPlugin({
+      patterns: [
+        { from: 'src/assets/img', to: 'assets/img' },
+      ],
+    }),
   ],
 };
