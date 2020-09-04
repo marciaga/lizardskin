@@ -50,6 +50,18 @@ module.exports = {
         ],
       },
       {
+        test: /\.(woff|ttf|otf|eot|woff2|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/'
+            }
+          }
+        ]
+      },
+      {
         test: /\.html$/,
         use: {
           loader: 'html-loader',
@@ -104,6 +116,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: 'src/assets/img', to: 'assets/img' },
+        { from: 'src/assets/fonts', to: 'assets/fonts' },
       ],
     }),
         // ComppresionPlugin will Prepare compressed versions of assets to serve them with Content-Encoding.

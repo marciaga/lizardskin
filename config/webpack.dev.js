@@ -49,6 +49,18 @@ module.exports = {
         ],
       },
       {
+        test: /\.(woff|ttf|otf|eot|woff2|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/'
+            }
+          }
+        ]
+      },
+      {
         test: /\.html$/,
         use: {
           loader: 'html-loader',

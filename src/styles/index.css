@@ -383,12 +383,15 @@ table {
 	box-sizing: border-box;
 }
 
-/*@font-face {
+@font-face {
   font-family: 'AvenirNextCondensed-DemiBold';
-  src: url('./src/assets/fonts/AvenirNextCondensed-DemiBold.eot?#iefix') format('embedded-opentype'),  url('./src/assets/fonts/AvenirNextCondensed-DemiBold.woff') format('woff'), url('./src/assets/fonts/AvenirNextCondensed-DemiBold.ttf')  format('truetype'), url('AvenirNextCondensed-DemiBold.svg#AvenirNextCondensed-DemiBold') format('svg');
+  src: url('../assets/fonts/AvenirNextCondensed-DemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/AvenirNextCondensed-DemiBold.woff') format('woff'),
+    url('../assets/fonts/AvenirNextCondensed-DemiBold.ttf') format('truetype'),
+    url('../assets/fonts/AvenirNextCondensed-DemiBold.svg#AvenirNextCondensed-DemiBold') format('svg');
   font-weight: normal;
   font-style: normal;
-}*/
+}
 
 html {
 	height: 100%;
@@ -461,8 +464,8 @@ canvas {
 }
 
 .hero-container h2 {
-/*	font-family: 'AvenirNextCondensed-DemiBold';
-*/	font-style: normal;
+	font-family: 'AvenirNextCondensed-DemiBold';
+	font-style: normal;
     position: relative;
     color: #f0ebe2;
     text-align: center;
