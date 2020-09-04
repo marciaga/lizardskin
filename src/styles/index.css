@@ -468,6 +468,7 @@ canvas {
 	font-style: normal;
     position: relative;
     color: #f0ebe2;
+    font-size: 24px;
     text-align: center;
     margin: 0;
     text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.6);
@@ -493,12 +494,54 @@ canvas {
   }
 }
 
+.content-container .text-container {
+	margin: 64px auto 0;
+	font-family: 'AvenirNextCondensed-DemiBold';
+	font-style: normal;
+	text-align: left;
+	color: #f0ebe2;
+	font-size: 18px;
+	max-width: 660px;
+}
+
+@media screen and (min-width: 480px) {
+  .content-container .text-container {
+    font-size: 24px;
+  }
+}
+
+.content-container .text-container p {
+	margin: 0;
+}
+
+.content-container .text-container p + p {
+	margin-top: 32px;
+}
+
 .primary-button {
 	display: inline-block;
     margin: 64px 0;
 	padding: 16px;
 	background: #998b26;
+/*	border: 2px solid #998b26;
+*/	font-family: 'AvenirNextCondensed-DemiBold';
+	font-style: normal;
+	font-size: 24px;
 	color: #f0ebe2;
 	text-decoration: none;
     text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.6);
+    transition: all 0.25s;
+}
+
+.primary-button:hover {
+	background: #6f4340;
+}
+
+.footer-hero {
+	width: 100%;
+	border-top: 3px solid #6f4340;
+}
+
+.footer-hero img {
+	width: 100%;
 }
