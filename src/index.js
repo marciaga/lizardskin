@@ -2,8 +2,8 @@ import * as PIXI from 'pixi.js'
 
 import './styles/index.css';
 
-const width = 1920;
-const height = 1200;
+const width = 2000;
+const height = 1531;
 const container = document.getElementById('px-render');
 
 let canvas;
@@ -37,8 +37,8 @@ function setScene(url) {
 
   displacementFilter = new PIXI.filters.DisplacementFilter(displacementSprite);
 
-  displacementSprite.scale.y = 0.6;
-  displacementSprite.scale.x = 0.6;
+  displacementSprite.scale.y = 0.7;
+  displacementSprite.scale.x = 1.0;
 
 
   stage.addChild(displacementSprite);
@@ -61,9 +61,9 @@ function removeScene () {
 
 function animate() {
   // effectively intensity
-  const countMultiplier = 10;
+  const countMultiplier =50;
   // effectively speed
-  const countIncrement = 0.05;
+  const countIncrement = 0.10;
 
   raf = requestAnimationFrame(animate);
 
