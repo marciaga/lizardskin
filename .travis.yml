@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - "12"
+branches:
+  only:
+  - master
+before_script:
+ - npm install
+script:
+ - npm run build
+# deploy:
+#   provider: s3
+#   access_key_id: $AWS_ACCESS_KEY
+#   secret_access_key: $AWS_SECRET_KEY
+#   bucket: $AWS_S3_BUCKET
+#   skip_cleanup: true
+
+after_deploy:
+  - echo "Application deployed successfully"
