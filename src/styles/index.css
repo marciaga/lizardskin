@@ -537,11 +537,17 @@ canvas {
 
 .content-container .text-container a {
 	color: #f0ebe2;
+	text-decoration: none;
+	transition: all 0.25s;
+}
+
+.content-container .text-container a:hover {
+	color: #998b26;
 }
 
 .primary-button {
 	display: inline-block;
-	margin: 64px 0 0;
+	margin: 64px 0;
 	width: 100%;
 	border-radius: 50px;
 	padding: 16px;
@@ -559,13 +565,35 @@ canvas {
 @media screen and (min-width: 480px) {
 	.primary-button {
 		width: auto;
-  		margin: 64px 0;
-			font-size: 24px;
+		margin: 64px 0;
+		font-size: 24px;
 	}
 }
 
 .primary-button:hover {
 	background: #6f4340;
+}
+
+.social-links a {
+	display: inline-block;
+	margin: 0 16px;
+	opacity: 1;
+	transition: all 0.25s;
+}
+
+@media screen and (min-width: 480px) {
+	.social-links a {
+		margin: 0 32px;
+	}
+}
+
+.social-links a:hover {
+	opacity: 0.6;
+}
+
+.social-links a img {
+	display: block;
+	height: 32px;
 }
 
 .product-hero {
