@@ -117,6 +117,7 @@ module.exports = {
       patterns: [
         { from: 'src/assets/img', to: 'assets/img' },
         { from: 'src/assets/fonts', to: 'assets/fonts' },
+        { from: 'src/assets/sitemap.xml', to: '.' },
       ],
     }),
         // ComppresionPlugin will Prepare compressed versions of assets to serve them with Content-Encoding.
