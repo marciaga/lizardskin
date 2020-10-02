@@ -493,21 +493,21 @@ canvas {
 	display: block;
 	margin: 0 auto;
 	width: 100% !important;
-	height: 420px !important;
+	height: 620px !important;
 	border: 1px solid #423c3b !important;
 }
 
 @media screen and (min-width: 480px) {
 	.iframe-container iframe {
 		width: 440px !important;
-		height: 558px !important;
+		height: 720px !important;
 	}
 }
 
 @media screen and (min-width: 768px) {
 	.iframe-container iframe {
 		width: 660px!important;
-		height: 778px!important;
+		height: 950px!important;
 	}
 }
 
