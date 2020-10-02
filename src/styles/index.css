@@ -519,6 +519,7 @@ canvas {
 	color: #f0ebe2;
 	font-size: 18px;
 	max-width: 660px;
+	text-align: center;
 }
 
 @media screen and (min-width: 480px) {
@@ -547,7 +548,7 @@ canvas {
 
 .primary-button {
 	display: inline-block;
-	margin: 64px 0;
+	margin: 32px 0 64px;
 	width: 100%;
 	border-radius: 50px;
 	padding: 16px;
@@ -565,7 +566,7 @@ canvas {
 @media screen and (min-width: 480px) {
 	.primary-button {
 		width: auto;
-		margin: 64px 0;
+		margin: 32px 0 64px;
 		font-size: 24px;
 	}
 }
@@ -574,9 +575,13 @@ canvas {
 	background: #6f4340;
 }
 
+.social-links {
+	margin: 32px 0;
+}
+
 .social-links a {
 	display: inline-block;
-	margin: 0 16px;
+	margin: 0 8px;
 	opacity: 1;
 	transition: all 0.25s;
 }
